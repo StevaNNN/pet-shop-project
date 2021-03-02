@@ -1,9 +1,0 @@
-@import 'icons';
-@import 'grid/grid';
-@import 'helpers';
-@import 'header-dog';
-
-.#{$prefix}link,
-a {
-	color: $link-color;
-}
