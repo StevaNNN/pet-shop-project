@@ -1,0 +1,72 @@
+/// Mixin that helps us match the exact child(configurable) inside parent that has exact number(configurable) children
+/// @name quantity-queries
+/// @author Stevan Stojanovic
+/// @group mixins
+/// @param {boolean} $all-queries [true] represent the flag if we want to select each child inside $total-queries number of children
+/// @param {number} $total-queries [null] represent the how many children parent has in total
+/// @param {number} $query [null] representing the child that we want to select and style
+/// @param {variable} $html-element ['div'] representing the type of HTML element that parent and children are
+/// @example
+///     This is when we want to use mixin for all el's when their parent has ONLY 4 children
+///     INPUT:
+///     .some-class {
+///         @include quntity-queries($total-queries: 4) {
+///             font-size: 10px;
+///         }
+///     }
+///
+///     OUTPUT:
+///     .some-class div:nth-last-child(4):first-child,
+///     .some-class div:nth-last-child(4):first-child ~ * {
+///        font-size: 10px;
+///     }
+///
+///     This is when we want to use mixin for 2-nd el's when its parent has ONLY 4 children
+///     INPUT:
+///     .some-class {
+///         @include quntity-queries($total-queries: 4, $all-queries: false, $query: 2) {
+///             font-size: 10px;
+///         }
+///     }
+///
+///     OUTPUT:
+///     .some-class div:nth-last-child(4):first-child ~ div:nth-of-type(2) {
+///        font-size: 10px;
+///     }
+@mixin quntity-queries(
+    $all-queries: true,
+    $total-queries: null,
+    $query: null,
+    $html-element: 'div'
+) {
+    @if ($all-queries == true and $total-queries != null and is-number($total-queries) == true) {
+        #{$html-element} {
+            &:nth-last-child(#{$total-queries}) {
+                &:first-child,
+                &:first-child ~ * {
+                    @content;
+                }
+            }
+        }
+    } @else {
+        @if ($query != 1) {
+            #{$html-element} {
+                &:nth-last-child(#{$total-queries}) {
+                    &:first-child ~ {
+                        #{$html-element}:nth-of-type(#{$query}) {
+                            @content;
+                        }
+                    }
+                }
+            }
+        } @else {
+            #{$html-element} {
+                &:nth-last-child(#{$total-queries}) {
+                    &:first-child {
+                        @content;
+                    }
+                }
+            }
+        }
+    }
+}

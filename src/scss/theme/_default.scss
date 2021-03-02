@@ -1,0 +1,60 @@
+//--------------------------------------------------------------------------------------------------------------------//
+//                                               THEME VARIABLES                                                      //
+//--------------------------------------------------------------------------------------------------------------------//
+/// App font family secondary
+/// @group theme
+$color-map: (
+		'primary':  #55bc92,
+		'info':     #1c99f2,
+		'error':    #ff6200,
+		'warning':  #f8cc6a
+);
+//--------------------------------------------------------------------------------------------------------------------//
+/// App font color on light bg
+/// @group theme
+$text-color-dark: #000;
+/// App font color light on light bg
+/// @group theme
+$text-color-dark-medium: #0d0d0d;
+/// App font color lighter on light bg
+/// @group theme
+$text-color-dark-light: #868686;
+/// App font color secondary
+/// @group theme
+$text-color-secondary: #122a3b;
+/// App font color light secondary
+/// @group theme
+$text-color-secondary-light: #619ec3;
+/// App font color on colored bg
+/// @group theme
+$text-color-light: #fff;
+/// App font color light on colored bg
+/// @group theme
+$text-color-light-medium: #fafcf4;
+/// App body text color
+/// @group theme
+$body-text-color: $text-color-dark !default;
+/// App body background color
+/// @group theme
+$body-bg-color: #fff !default;
+/// App body font size
+/// @group theme
+$body-font-size: 14px !default;
+/// App body font family
+/// @group theme
+$body-font-family: $font-family !default;
+/// App primary color
+/// @group theme
+$primary: color('primary') !default;
+/// App body primary contrast color
+/// @group theme
+$primary-contrast: contrast-wcag($primary) !default;
+/// App link color
+/// @group theme
+$link-color: #18a7e7 !default;
+/// App border color
+/// @group theme
+$border-color: #f3f3f3 !default;
+/// App border radius
+/// @group theme
+$border-radius: 10px;

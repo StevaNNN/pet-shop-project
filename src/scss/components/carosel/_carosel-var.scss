@@ -1,0 +1,58 @@
+//--------------------------------------------------------------------------------------------------------------------//
+//                                            CAROUSEL VARIABLES                                                      //
+//--------------------------------------------------------------------------------------------------------------------//
+/// carousel height
+/// @group carousel
+$ps-carousel-height: 234px !default;
+/// carousel width
+/// @group carousel
+$ps-carousel-width: 970px !default;
+//--------------------------------------------------------------------------------------------------------------------//
+/// carousel track animation
+/// @group carousel
+$ps-carousel-track-animation: transition(transform, $transition-duration: 500ms) !default;
+//--------------------------------------------------------------------------------------------------------------------//
+/// carousel card container width
+/// @group carousel
+$ps-carousel-card-container-width: 191px !default;
+/// carousel card container min height
+/// @group carousel
+$ps-carousel-card-container-min-width: 250px !default;
+/// carousel card container spacer
+/// @group carousel
+$ps-carousel-card-container-spacer: 17px !default;
+//--------------------------------------------------------------------------------------------------------------------//
+/// carousel card img background color
+/// @group carousel
+$ps-carousel-card-img-bg-color: #f3eff0 !default;
+/// carousel card img background color
+/// @group carousel
+$ps-carousel-card-img-min-height: 180px !default;
+/// carousel card text font family
+/// @group carousel
+$ps-carousel-card-text-font-family: $font-family-secondary-bold !default;
+/// carousel card detail text spacing
+/// @group carousel
+$ps-carousel-card-detail-text-spacing: 15px 0 13px !default;
+/// carousel card detail price color
+/// @group carousel
+$ps-carousel-card-detail-price-color: color('error') !default;
+//--------------------------------------------------------------------------------------------------------------------//
+/// carousel action button background color
+/// @group carousel
+$ps-carousel-action-button-bg-color: $btn-primary-bg-color !default;
+/// carousel action button hover background color
+/// @group carousel
+$ps-carousel-action-button-hover-bg-color: $btn-primary-hover-bg-color !default;
+/// carousel action button transition
+/// @group carousel
+$ps-carousel-action-button-transition: transition(background-color) !default;
+/// carousel action button box shadow
+/// @group carousel
+$ps-carousel-action-button-box-shadow: $btn-focused-shadow !default;
+/// carousel action button border radius
+/// @group carousel
+$ps-carousel-action-button-border-radius: 50% !default;
+/// carousel action button size
+/// @group carousel
+$ps-carousel-action-button-size: 40px !default;

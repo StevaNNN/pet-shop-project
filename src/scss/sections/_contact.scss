@@ -1,0 +1,153 @@
+.#{$prefix}contact {
+	background-color: #fafcf4;
+	display: flex;
+	justify-content: center;
+	padding: 175px 0;
+	position: relative;
+	
+	@include respond-below(660px) {
+		padding: 80px 0;
+	}
+	
+	> .grid-container {
+		@include respond-below(lg) {
+			max-width: 100%;
+		}
+	}
+	
+	.#{$prefix}section-content {
+		@include respond-below(lg) {
+			justify-content: center;
+		}
+	}
+
+	.#{$prefix}contact-dog-wrapper {
+		height: 482px;
+		position: relative;
+		width: 458px;
+		
+		@include respond-below(lg) {
+			height: 283px;
+			margin-right: 80px;
+			margin-top: 97px;
+			width: 269px;
+		}
+		
+		@include respond-below(md) {
+			margin-right: 40px;
+		}
+		
+		@include respond-below(660px) {
+			display: none;
+		}
+		
+		&.secondary {
+			display: none;
+			margin: 0 0 37px;
+			
+			@include respond-below(660px) {
+				display: block;
+			}
+		}
+	}
+
+	.#{$prefix}contact-dog {
+		border-radius: 24px;
+		box-shadow: 3px 4px 14px rgba(#000, .18);
+		overflow: hidden;
+		position: absolute;
+
+		&:nth-last-of-type(1) {
+			height: 286px;
+			left: 0;
+			object-fit: contain;
+			top: 0;
+
+			@include respond-below(lg) {
+				height: 167px;
+			}
+		}
+
+		&:nth-last-of-type(2) {
+			height: 331px;
+			object-fit: contain;
+			right: 0;
+			top: 73px;
+			
+			@include respond-below(lg) {
+				height: 195px;
+				top: 42px;
+			}
+		}
+		
+		&:nth-last-of-type(3) {
+			bottom: 0;
+			height: 174px;
+			left: 82px;
+			object-fit: contain;
+			position: absolute;
+			z-index: 1;
+			
+			@include respond-below(lg) {
+				height: 103px;
+				left: 48px;
+			}
+		}
+	}
+
+	.#{$prefix}contact-form {
+		display: flex;
+		flex-direction: column;
+		
+		@include respond-below(lg) {
+			margin-left: 80px;
+		}
+		
+		@include respond-below(md) {
+			margin-left: 40px;
+		}
+		
+		@include respond-below(660px) {
+			align-items: center;
+			flex: 1;
+			margin: 0;
+			padding: 0 25px;
+		}
+	}
+
+	.#{$prefix}section-info-text {
+
+		&:last-of-type {
+			margin-bottom: 51px;
+		}
+	}
+
+	.#{$prefix}form {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		width: 414px;
+		
+		@include respond-below(lg) {
+			width: 287px;
+		}
+		
+		@include respond-below(660px) {
+			width: 100%;
+		}
+
+		> *:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+
+	.#{$prefix}textarea {
+		min-height: 128px;
+	}
+
+	.#{$prefix}flex {
+		align-items: flex-end;
+		display: flex;
+		flex: 1;
+	}
+}

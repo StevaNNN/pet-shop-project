@@ -1,0 +1,14 @@
+.#{$prefix}input,
+.#{$prefix}textarea {
+	background-color: $input-bg-color;
+	border-color: $input-border-color;
+	border-radius: $btn-border-radius;
+	border-style: solid;
+	border-width: 1px;
+	color: $input-text-color;
+	font-family: $input-font-family;
+	font-size: $input-font-size;
+	outline: none;
+	padding: $input-padding-y $input-padding-x ($input-padding-y - 1);
+	resize: none;
+}

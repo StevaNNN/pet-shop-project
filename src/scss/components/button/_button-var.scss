@@ -1,0 +1,52 @@
+//--------------------------------------------------------------------------------------------------------------------//
+//                                            BUTTON VARIABLES                                                        //
+//--------------------------------------------------------------------------------------------------------------------//
+/// button font size
+/// @group buttons
+$btn-font-size: $font-size-s;
+/// button big font size
+/// @group buttons
+$btn-big-font-size: $font-size;
+/// button font family
+/// @group buttons
+$btn-font-family: $font-family-bold;
+/// button padding horizontal
+/// @group buttons
+$btn-padding-x: 25px;
+/// button big padding horizontal
+/// @group buttons
+$btn-big-padding-x: 34px;
+/// button padding vertical
+/// @group buttons
+$btn-padding-y: 12px;
+/// button padding vertical
+/// @group big buttons
+$btn-big-padding-y: 21px;
+/// button border radius
+/// @group buttons
+$btn-border-radius: $border-radius;
+/// button focused box shadow
+/// @group buttons
+$btn-focused-shadow: 0 2px 4px -1px rgba(#000, .2),
+	0 4px 5px 0 rgba(#000, .14),
+	0 1px 10px 0 rgba(#000, .12);
+//--------------------------------------------------------------------------------------------------------------------//
+/// button primary background color
+/// @group buttons
+$btn-primary-bg-color: $primary;
+/// button primary border  color
+/// @group buttons
+$btn-primary-border-color: $primary ;
+/// button primary text color
+/// @group buttons
+$btn-primary-text-color: $primary-contrast;
+/// button primary hover background color
+/// @group buttons
+$btn-primary-hover-bg-color: #1e6b4c;
+/// button primary hover border color
+/// @group buttons
+$btn-primary-hover-border-color: #1e6b4c;
+/// button primary hover text color
+/// @group buttons
+$btn-primary-hover-text-color: $btn-primary-text-color;
+//--------------------------------------------------------------------------------------------------------------------//

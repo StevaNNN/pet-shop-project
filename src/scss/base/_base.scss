@@ -1,0 +1,17 @@
+html,
+body {
+	height: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	background-color: $body-bg-color;
+	color: $body-text-color;
+	font-family: $body-font-family;
+	font-size: $body-font-size;
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+}

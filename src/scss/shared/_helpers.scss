@@ -1,0 +1,10 @@
+/// @author Stevan Stojanovic
+/// @group helpers
+/// @access public
+/// @require $color-map
+/// @return {css-classes} - based on color map
+@each $key, $hex in $color-map {
+	.#{$prefix}#{$key}-text {
+		color: $hex;
+	}
+}

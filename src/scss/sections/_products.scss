@@ -1,0 +1,20 @@
+.#{$prefix}products {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 98px;
+	
+	.#{$prefix}section-content {
+		justify-content: center;
+	}
+	
+	.#{$prefix}section-title {
+		margin-bottom: 70px;
+	}
+	
+	> .grid-container {
+		@include respond-below(lg) {
+			max-width: 100%;
+		}
+	}
+}

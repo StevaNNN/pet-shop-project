@@ -1,0 +1,24 @@
+//--------------------------------------------------------------------------------------------------------------------//
+//                                            INPUT VARIABLES                                                         //
+//--------------------------------------------------------------------------------------------------------------------//
+/// input font family
+/// @group inputs
+$input-font-family: $font-family !default;
+/// input font size
+/// @group inputs
+$input-font-size: $font-size-xs !default;
+/// input background color
+/// @group inputs
+$input-bg-color: #fff;
+/// input border color
+/// @group inputs
+$input-border-color: #e1e1e1 ;
+/// input text color
+/// @group inputs
+$input-text-color: $text-color-dark-light;
+/// input padding horizontal
+/// @group inputs
+$input-padding-x: 18px;
+/// input padding vertical
+/// @group inputs
+$input-padding-y: 16px;

@@ -1,0 +1,127 @@
+.#{$prefix}nav {
+	align-items: center;
+	background-color: $nav-bg-color;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: $nav-padding-y $nav-padding-x;
+	position: relative;
+	
+	&.#{$prefix}nav-transparent {
+		background-color: transparent;
+	}
+	
+	&.expanded {
+		background-color: #fff;
+	}
+	
+	.#{$prefix}nav-logo {
+		align-items: center;
+		background-image: url($nav-logo-img-path);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: inline-flex;
+		height: $nav-logo-height;
+		justify-content: center;
+		width: $nav-logo-width;
+		
+		@include respond-below(sm) {
+			background-size: contain;
+			width: $nav-logo-sm-width;
+		}
+	}
+	
+	.#{$prefix}nav-list {
+		align-items: center;
+		display: inline-flex;
+		
+		@include respond-below(md) {
+			background-color: #fff;
+			border-radius: $border-radius;
+			box-shadow: 0 8px 10px -5px rgba(#000, .2), 0 16px 24px 2px rgba(#000, .14), 0 6px 30px 5px rgba(#000, .12);
+			display: none;
+			flex-direction: column;
+			margin-top: $nav-padding-y;
+			order: 3;
+			padding: 25px;
+			width: 100%;
+		}
+	}
+	
+	.#{$prefix}nav-list-item {
+		width: 100%;
+		
+		@include respond-below(md) {
+			text-align: center;
+		}
+		
+		&:hover,
+		&.active {
+			
+			.#{$prefix}nav-list-item-link {
+				&::before {
+					transform: scaleX(1);
+				}
+			}
+		}
+	}
+	
+	.#{$prefix}nav-list-item-link {
+		align-items: center;
+		color: $nav-link-text-color;
+		display: inline-flex;
+		font-family: $nav-link-font-family;
+		font-size: $nav-link-font-size;
+		justify-content: center;
+		line-height: 1;
+		margin-top: 19px;
+		padding: 11px $nav-link-padding-x 14px;
+		position: relative;
+
+		&::before {
+			background-color: $nav-link-underline-color;
+			bottom: 0;
+			content: '';
+			height: $nav-link-underline-height;
+			left: 0;
+			position: absolute;
+			transform: scaleX(0);
+			transition: transition(transform);
+			width: 100%;
+		}
+	}
+	
+	.#{$prefix}nav-right-section {
+		align-items: center;
+		display: flex;
+		margin-top: 15px;
+		
+		.#{$prefix}icon:not(.#{$prefix}hamburger) {
+			margin-right: 39px;
+			
+			@include respond-below(sm) {
+				margin-right: 15px;
+			}
+		}
+	}
+	
+	.#{$prefix}hamburger-menu {
+		background-color: transparent;
+		border: 0;
+		cursor: pointer;
+		margin-left: 26px;
+		outline: 0;
+		padding: 20px;
+		
+		@include respond-above(md) {
+			display: none;
+		}
+		
+		@include respond-below(sm) {
+			margin-left: 15px;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.#{$prefix}social-action-bar {
+	display: flex;
+
+	.#{$prefix}social-icon {
+		background-color: $social-icon-bg-color;
+		background-position: center;
+		background-repeat: no-repeat;
+		border-radius: $social-icon-border-radius;
+		height: 39px;
+		width: 39px;
+
+		&:not(:last-of-type) {
+			margin-right: $social-icon-spacing;
+		}
+
+		&.#{$prefix}facebook-icon {
+			background-image: url($social-icon-facebook-bg-url);
+			background-size: $social-icon-facebook-bg-position;
+		}
+
+		&.#{$prefix}instagram-icon {
+			background-image: url('#{$imgs-path}instagram-logo.png');
+			background-size: $social-icon-instagram-bg-position;
+		}
+
+		&.#{$prefix}twitter-icon {
+			background-image: url('#{$imgs-path}twitter-logo.png');
+			background-size: $social-icon-twitter-bg-position;
+		}
+	}
+}

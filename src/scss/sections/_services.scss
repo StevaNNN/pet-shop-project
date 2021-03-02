@@ -1,0 +1,73 @@
+.#{$prefix}services {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding: 85px 0;
+
+	.#{$prefix}section-title {
+		color: $text-color-secondary;
+	}
+
+	.#{$prefix}section-info-text {
+		max-width: 391px;
+	}
+
+	.#{$prefix}section-content {
+		padding: 75px 0 0;
+	}
+
+	.#{$prefix}panelbar-list {
+		padding-right: 100px;
+		
+		@include respond-below(lg) {
+			padding-right: 0;
+		}
+		
+		@include respond-below(md) {
+			margin-bottom: 50px;
+		}
+	}
+
+	.#{$prefix}services-benefits {
+
+		@include respond-below(md) {
+			text-align: center;
+		}
+		
+		.#{$prefix}services-benefits-title {
+			color: $text-color-dark-light;
+			font-family: $font-family-bold;
+			letter-spacing: 2px;
+			margin-bottom: 32px;
+			
+			@include respond-above(sm) {
+				padding-left: 16px + 14px;
+			}
+		}
+	}
+
+	.#{$prefix}services-benefits-list {
+		font-family: $font-family-secondary;
+
+		li {
+			line-height: 19px;
+			padding: 9px 0 8px;
+			
+			@include respond-below(sm) {
+				align-items: center;
+				display: flex;
+				flex-direction: column;
+				font-size: $font-size-xs;
+			}
+		}
+
+		.#{$prefix}icon {
+			margin-right: 12px;
+			
+			@include respond-below(sm) {
+				margin-bottom: 12px;
+				margin-right: 0;
+			}
+		}
+	}
+}

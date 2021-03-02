@@ -1,0 +1,75 @@
+/// @name add single fonts
+/// @author Stevan Stojanovic
+/// @group fonts
+/// @require {variable} $fonts-path
+/// @require {map} $fonts-map
+/// @param {variable} $font ['open-sans-regular'] represents the param which is intended to be picked from the $fonts-map
+/// @param {map}  $fonts [null] is the param that is meant to be changed ONLY when using this mixin inside add-all-fonts
+/// @param {boolean} $for-all-fonts-reference [false] this serves as a switch when using this mixin inside add-all-fonts
+/// @example
+/// THIS IS THE DEFAULT
+///   @include add-single-font;
+///         outputs:
+///             @font-face {
+///                  font-display: swap;
+///                  font-family: "open-sans-regular";
+///                  font-style: normal;
+///                  font-weight: normal;
+///                  src: url("../resources/fonts/open-sans-semibold.ttf");
+///              }
+/// THIS IS RANDOM BUT NESTED INSIDE VALID FONT-CONFIG-MAP
+///   @include add-single-fonts('open-sans-semibold');
+///         outputs:
+///             @font-face {
+///                  font-display: swap;
+///                  font-family: "open-sans-semibold";
+///                  font-style: normal;
+///                  font-weight: normal;
+///                  src: url("../resources/fonts/open-sans-semibold.ttf");
+///              }
+@mixin add-single-font(
+    $font: 'manrope-regular',
+    $fonts: null,
+    $for-all-fonts-reference: false
+) {
+    @if ($fonts != null and $for-all-fonts-reference) {
+        @font-face {
+            font-display: swap;
+            font-family: map-deep-get($fonts, 'name');
+            font-style: unquote(map-deep-get($fonts, 'style'));
+            font-weight: unquote(map-deep-get($fonts, 'weight'));
+            src: url('#{$fonts-path}' + map-deep-get($fonts, 'name') + '.' + map-deep-get($fonts, 'formats'));
+        }
+    } @else if ($for-all-fonts-reference: false) {
+        $single-font-reference: map-get($fonts-map, $font);
+
+        @font-face {
+            font-display: swap;
+            font-family: map-get($single-font-reference, 'name');
+            font-style: unquote(map-get($single-font-reference, 'style'));
+            font-weight: unquote(map-get($single-font-reference, 'weight'));
+            src: url('#{$fonts-path}' + map-get($single-font-reference, 'name') + '.' + map-get($single-font-reference, 'formats'));
+        }
+    } @else  {
+        @warn 'Please provide the map and the desired submap!'
+    }
+}
+
+/// @name add all fonts
+/// @author Stevan Stojanovic
+/// @group fonts
+/// @require {variable} $fonts-path
+/// @require {map}      $map
+/// @param   {map}      $map which holds the config for multiple font groups
+@mixin add-all-fonts($map: $fonts-map) {
+    @if ($map != null) {
+        $font-groups: map-keys($map);
+
+        @for $i from 1 through length($font-groups) {
+            $single-font-group-name: nth($font-groups, $i);
+            @include add-single-font($fonts: map-get($map, $single-font-group-name), $for-all-fonts-reference: true);
+        }
+    } @else {
+        @error 'You need to provide map of fonts which you want to include into app!'
+    }
+}

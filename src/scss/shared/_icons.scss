@@ -1,0 +1,56 @@
+.#{$prefix}icon {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-flex;
+	flex-shrink: 0;
+}
+
+.#{$prefix}icon-shopping-cart {
+	background-image: url('#{$imgs-path}shopping-cart.png');
+	height: 22px;
+	width: 22px;
+}
+
+.#{$prefix}icon-down-blue {
+	background-image: url('#{$imgs-path}down-arrow-blue.png');
+	height: 18px;
+	width: 14px;
+}
+
+.#{$prefix}icon-scissors-blue {
+	background-image: url('#{$imgs-path}scissors-blue.png');
+	height: 18px;
+	width: 20px;
+}
+
+.#{$prefix}icon-dog-training-blue {
+	background-image: url('#{$imgs-path}dog-training-blue.png');
+	height: 18px;
+	width: 20px;
+}
+
+.#{$prefix}icon-dog-walking-blue {
+	background-image: url('#{$imgs-path}dog-walking-blue.png');
+	height: 18px;
+	width: 20px;
+}
+
+.#{$prefix}icon-hospital-blue {
+	background-image: url('#{$imgs-path}hospital-blue.png');
+	height: 18px;
+	width: 20px;
+}
+
+.#{$prefix}icon-paw {
+	background-image: url('#{$imgs-path}paw.png');
+	height: 16px;
+	width: 16px;
+}
+
+.#{$prefix}hamburger {
+	background-image: url('#{$imgs-path}hamburger-menu.png');
+	background-size: 25px 19px;
+	height: 19px;
+	width: 25px;
+}

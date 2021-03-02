@@ -1,0 +1,48 @@
+//--------------------------------------------------------------------------------------------------------------------//
+//                                            NAV VARIABLES                                                           //
+//--------------------------------------------------------------------------------------------------------------------//
+/// nav background color
+/// @group nav
+$nav-bg-color: null !default;
+/// nav padding horizontal
+/// @group nav
+$nav-padding-x: 25px !default;
+/// nav padding horizontal
+/// @group nav
+$nav-padding-x: 25px !default;
+/// nav padding vertical
+/// @group nav
+$nav-padding-y: 25px !default;
+//--------------------------------------------------------------------------------------------------------------------//
+/// nav logo width
+/// @group nav
+$nav-logo-width: 161px !default;
+/// nav logo sm width
+/// @group nav
+$nav-logo-sm-width: 116px !default;
+/// nav logo height
+/// @group nav
+$nav-logo-height: 60px !default;
+/// nav logo bg img path
+/// @group nav
+$nav-logo-img-path: '#{$imgs-path}logo.png' !default;
+//--------------------------------------------------------------------------------------------------------------------//
+/// nav link font family
+/// @group nav
+$nav-link-font-family: $font-family-bold !default;
+/// nav link font size
+/// @group nav
+$nav-link-font-size: $font-size !default;
+/// nav link text color
+/// @group nav
+$nav-link-text-color: $text-color-dark-medium !default;
+/// nav link padding horizontal
+/// @group nav
+$nav-link-padding-x: 15px !default;
+//--------------------------------------------------------------------------------------------------------------------//
+/// nav link underline padding vertical
+/// @group nav
+$nav-link-underline-height: 2px !default;
+/// nav link underline padding vertical
+/// @group nav
+$nav-link-underline-color: $nav-link-text-color !default;

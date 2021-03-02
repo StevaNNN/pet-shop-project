@@ -1,0 +1,101 @@
+/// helper-classes function for parsing correct value to the content property
+/// @name content
+/// @group functions
+/// @author Stevan Stojanovic
+@function content($tp-var) {
+	// scss-lint:disable quotes
+	@return unquote("\"#{$tp-var}\"");
+}
+
+/// @name ui-suffix
+/// @author Stevan Stojanovic
+/// @group functions
+/// @param {string} $ui quoted or unquoted
+/// returns nothing if ui is set to null, and -#{$ui} if not
+@function ui-suffix($ui) {
+	@return if($ui == null, '', '-' + $ui);
+}
+
+/// @name is-number
+/// @author Stevan Stojanovic
+/// @group functions
+/// @param {string} $value quoted or unquoted
+/// returns true if the $value is type of number
+@function is-number($value) {
+	@return type-of($value) == 'number';
+}
+
+/// @name map deep get
+/// @author Stevan Stojanovic
+/// @group functions
+/// @access public
+/// @param {Map} $map - Map
+/// @param {Arglist} $keys - Key chain
+/// @return {*} - Desired value
+@function map-deep-get($map, $keys...) {
+	@each $key in $keys {
+		$map: map-get($map, $key);
+	}
+	@return $map;
+}
+
+/// @name color
+/// @author Stevan Stojanovic
+/// @group functions
+/// @access public
+/// @param {variable} $color - key from color map
+/// @return {*} - extracted value of color from $color-map
+@function color($color: "primary") {
+	@return map-get($color-map, $color);
+}
+
+/// @name luminance
+/// @author Stevan Stojanovic
+/// @group functions
+/// @require $linear-channel-values
+/// @access public
+/// @param {variable} $color color key from $color-map map
+/// @return {number} - in decimal represents the luminance lvl of provided color between 0 an 1
+@function luminance($color) {
+	$red: nth($linear-channel-values, red($color) + 1);
+	$green: nth($linear-channel-values, green($color) + 1);
+	$blue: nth($linear-channel-values, blue($color) + 1);
+	@return .2126 * $red + .7152 * $green + .0722 * $blue;
+}
+
+/// @name contrast-wcag
+/// @author Stevan Stojanovic
+/// @group functions
+/// @require $linear-channel-values
+/// @access public
+/// @param {variable} $color - desired color
+/// @return {#ffffff or #000000} - if $color is to bright return #000000 else if $color is to dark return #ffffff
+@function contrast-wcag($color, $dark: #000000, $light: #ffffff) {
+	$luma: luminance($color);
+	$out: if($luma < .5, $light, $dark);
+	// @debug $luma;
+	@return $out;
+}
+
+/// transition
+/// @author Stevan Stojanovic
+/// @group functions
+/// @access public
+/// @require {variable} $transition-duration
+/// @require {variable} $transition-animation
+/// @return {CSS property} css transition property if you want to use multiple transition just call this fn as many
+/// times as you need with comma separation
+/// @example
+///    .test { transition: transition(background-color), transition(color, 400ms, linear, 200ms); }
+///
+///     will result in:
+///
+///       .test { transition: background-color 200ms ease-in-out, color 400ms linear 200ms}
+@function transition(
+	$css-property,
+	$transition-duration: $transition-duration,
+	$transition-animation: $transition-animation,
+	$transition-delay: null) {
+
+	@return if($animations, $css-property $transition-duration $transition-animation $transition-delay, null);
+}

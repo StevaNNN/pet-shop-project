@@ -1,0 +1,104 @@
+//--------------------------------------------------------------------------------------------------------------------//
+//                                      THEME GLOBAL VARIABLES                                                        //
+//--------------------------------------------------------------------------------------------------------------------//
+/// App Global prefix
+/// @group config
+$prefix: 'ps-';
+/// App font path
+/// @group config
+$fonts-path:            '../fonts/';
+/// App imgs path
+/// @group config
+$imgs-path:             '../images/';
+//--------------------------------------------------------------------------------------------------------------------//
+//scss-lint:disable space-before-colon
+/// App map of fonts
+/// @group fonts
+$fonts-map: ((
+		'roboto-slab-regular': (
+				'display': 'fallback',
+				'name'   : 'roboto-slab-regular',
+				'style'  : 'normal',
+				'weight' : 'normal',
+				'formats': 'ttf'
+		),
+		'roboto-slab-bold': (
+				'display': 'fallback',
+				'name'   : 'roboto-slab-bold',
+				'style'  : 'normal',
+				'weight' : 'normal',
+				'formats': 'ttf'
+		),
+		'manrope-regular': (
+				'display': 'fallback',
+				'name'   : 'manrope-regular',
+				'style'  : 'normal',
+				'weight' : 'normal',
+				'formats': 'ttf'
+		),
+		'manrope-bold': (
+				'display': 'falback',
+				'name'	 : 'manrope-bold',
+				'style'  : 'normal',
+				'weight' : 'normal',
+				'formats': 'ttf'
+		)
+));
+//--------------------------------------------------------------------------------------------------------------------//
+/// App font reference map
+/// @group fonts
+$fonts-reference-map: (
+		'roboto-slab-regular':  ('roboto-slab-regular', 'Helvetica Neue', sans-serif),
+		'roboto-slab-bold':     ('roboto-slab-bold',    'Helvetica Neue', sans-serif),
+		'manrope-regular':      ('manrope-regular',     'Helvetica Neue', sans-serif),
+		'manrope-bold':         ('manrope-bold',        'Helvetica Neue', sans-serif)
+);
+//--------------------------------------------------------------------------------------------------------------------//
+/// App font family
+/// @group fonts
+$font-family:           		map-get($fonts-reference-map, manrope-regular);
+/// App font family bold
+/// @group fonts
+$font-family-bold:      		map-get($fonts-reference-map, manrope-bold);
+/// App font family light italic
+/// @group fonts
+$font-family-secondary:         map-get($fonts-reference-map, roboto-slab-regular);
+/// App font family secondary
+/// @group fonts
+$font-family-secondary-bold:  	map-get($fonts-reference-map, roboto-slab-bold);
+//--------------------------------------------------------------------------------------------------------------------//
+/// App font size
+/// @group fonts
+$font-size-xs: 12px;
+/// App font size
+/// @group fonts
+$font-size-s: 14px;
+/// App font size
+/// @group fonts
+$font-size: 16px;
+/// App font size
+/// @group fonts
+$font-size-m: 18px;
+/// App font size
+/// @group fonts
+$font-size-l: 34px;
+/// App font size
+/// @group fonts
+$font-size-xl: 40px;
+//--------------------------------------------------------------------------------------------------------------------//
+/// Toogle animations
+/// @group config
+$animations: true;
+/// App transition animation type
+/// @group config
+$transition-animation: ease-in-out;
+/// App transition animation duration
+/// @group config
+$transition-duration: 200ms;
+//--------------------------------------------------------------------------------------------------------------------//
+$breakpoints: (
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px
+);

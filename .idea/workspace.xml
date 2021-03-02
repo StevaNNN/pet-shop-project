@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6e56551d-0add-4199-8745-692f0e867b93" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1i0F8MAkLvEvbgCefLlc2fRfcSM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ORDI/ordering-app-api" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="com.sasslint.settings.SassLintSettingsPage" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dist" />
+      <recent name="$PROJECT_DIR$/src/js/components" />
+      <recent name="$PROJECT_DIR$/src/scss/components/carosel" />
+      <recent name="$PROJECT_DIR$/src/scss/components/collapsable-panel" />
+      <recent name="$PROJECT_DIR$/src/scss/components/input" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/js/components" />
+      <recent name="$PROJECT_DIR$/src/js/navigation" />
+      <recent name="$PROJECT_DIR$/src/js" />
+      <recent name="$PROJECT_DIR$/src/scss/shared/grid" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e56551d-0add-4199-8745-692f0e867b93" name="Default Changelist" comment="" />
+      <created>1601036443838</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601036443838</updated>
+      <workItem from="1601036445281" duration="24085000" />
+      <workItem from="1601069650281" duration="5717000" />
+      <workItem from="1601106196276" duration="226000" />
+      <workItem from="1601106906359" duration="5294000" />
+      <workItem from="1601114612808" duration="31239000" />
+      <workItem from="1601193872351" duration="27682000" />
+      <workItem from="1601236069555" duration="19561000" />
+      <workItem from="1601286198722" duration="2865000" />
+      <workItem from="1601289481295" duration="40150000" />
+      <workItem from="1601331256492" duration="1285000" />
+      <workItem from="1601370610059" duration="2602000" />
+      <workItem from="1602752466714" duration="2325000" />
+      <workItem from="1604599245308" duration="45000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="685" y="1284" width="549" height="637" key="#SCSS" timestamp="1601289621988">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="685" y="1284" width="549" height="637" key="#SCSS/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1601289621988" />
+    <state x="418" y="1257" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601147176098">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="418" y="1257" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1601147176098" />
+    <state x="639" y="1401" width="632" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601219596290">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="639" y="1401" width="632" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1601219596290" />
+    <state x="693" y="1348" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601297715711">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="693" y="1348" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1601297715711" />
+    <state x="743" y="280" width="424" height="491" key="FileChooserDialogImpl" timestamp="1604599287885">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="743" y="1357" width="424" height="491" key="FileChooserDialogImpl/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1601331291009" />
+    <state x="743" y="280" key="FileChooserDialogImpl/0.27.1920.985@0.27.1920.985" timestamp="1604599287885" />
+    <state x="449" y="1234" width="1022" height="737" key="SettingsEditor" timestamp="1601289540492">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="449" y="1234" width="1022" height="737" key="SettingsEditor/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1601289540492" />
+    <state x="1" y="0" width="1919" height="988" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1601254609965">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1" y="0" width="1919" height="988" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1601254609965" />
+    <state x="651" y="1162" width="758" height="870" key="find.popup" timestamp="1601305054974">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="651" y="1162" width="758" height="870" key="find.popup/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1601305054974" />
+    <state x="624" y="775" key="run.anything.popup" timestamp="1601323777292">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="624" y="775" key="run.anything.popup/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1601323777292" />
+    <state x="623" y="1322" width="672" height="678" key="search.everywhere.popup" timestamp="1601311727674">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="623" y="1322" width="672" height="678" key="search.everywhere.popup/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1601311727674" />
+  </component>
+</project>

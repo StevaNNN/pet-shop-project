@@ -1,0 +1,116 @@
+{
+  "carouselDataArray": [
+    {
+      "item-src": "images/carosel-pic-1.png",
+      "item-detail": "Eukanuba Active Adult Large Breed",
+      "item-price": "€ 45.00"
+    },
+    {
+      "item-src": "images/carosel-pic-2.png",
+      "item-detail": "Comfort Dog House",
+      "item-price": "€ 102.99"
+    },
+    {
+      "item-src": "images/carosel-pic-3.png",
+      "item-detail": "Wild Knots Bears",
+      "item-price": "€ 4.99"
+    },
+    {
+      "item-src": "images/carosel-pic-4.png",
+      "item-detail": "6 x Barkoo Chew Bones with Filling",
+      "item-price": "€ 5.79"
+    },
+    {
+      "item-src": "images/carosel-pic-5.png",
+      "item-detail": "Barkoo Filled Chew Bone – with Mint",
+      "item-price": "€ 8.69"
+    },
+    {
+      "item-src": "images/carosel-pic-1.png",
+      "item-detail": "Eukanuba Active Adult Large Breed",
+      "item-price": "€ 45.00"
+    },
+    {
+      "item-src": "images/carosel-pic-2.png",
+      "item-detail": "Comfort Dog House",
+      "item-price": "€ 102.99"
+    },
+    {
+      "item-src": "images/carosel-pic-3.png",
+      "item-detail": "Wild Knots Bears",
+      "item-price": "€ 4.99"
+    },
+    {
+      "item-src": "images/carosel-pic-4.png",
+      "item-detail": "6 x Barkoo Chew Bones with Filling",
+      "item-price": "€ 5.79"
+    },
+    {
+      "item-src": "images/carosel-pic-1.png",
+      "item-detail": "Eukanuba Active Adult Large Breed",
+      "item-price": "€ 45.00"
+    },
+    {
+      "item-src": "images/carosel-pic-2.png",
+      "item-detail": "Comfort Dog House",
+      "item-price": "€ 102.99"
+    },
+    {
+      "item-src": "images/carosel-pic-3.png",
+      "item-detail": "Wild Knots Bears",
+      "item-price": "€ 4.99"
+    },
+    {
+      "item-src": "images/carosel-pic-4.png",
+      "item-detail": "6 x Barkoo Chew Bones with Filling",
+      "item-price": "€ 5.79"
+    },
+    {
+      "item-src": "images/carosel-pic-5.png",
+      "item-detail": "Barkoo Filled Chew Bone – with Mint",
+      "item-price": "€ 8.69"
+    },
+    {
+      "item-src": "images/carosel-pic-1.png",
+      "item-detail": "Eukanuba Active Adult Large Breed",
+      "item-price": "€ 45.00"
+    },
+    {
+      "item-src": "images/carosel-pic-2.png",
+      "item-detail": "Comfort Dog House",
+      "item-price": "€ 102.99"
+    },
+    {
+      "item-src": "images/carosel-pic-3.png",
+      "item-detail": "Wild Knots Bears",
+      "item-price": "€ 4.99"
+    },
+    {
+      "item-src": "images/carosel-pic-4.png",
+      "item-detail": "6 x Barkoo Chew Bones with Filling",
+      "item-price": "€ 5.79"
+    }
+  ],
+  "servicesDataArray": [
+    {
+      "icon": "scissors",
+      "service": "Grooming",
+      "detail": "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est"
+    },
+    {
+      "icon": "hospital",
+      "service": "Healthcare",
+      "detail": "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est"
+    },
+    {
+      "icon": "dog-training",
+      "service": "Training",
+      "detail": "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est"
+    },
+    {
+      "icon": "dog-walking",
+      "service": "Walking",
+      "detail": "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est"
+    }
+  ]
+}

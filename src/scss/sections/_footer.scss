@@ -1,0 +1,134 @@
+.#{$prefix}footer {
+	background-color: #012841;
+	color: $text-color-light-medium;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+	&::before {
+		background-image: url('#{$imgs-path}footer-dog.png');
+		background-position: right bottom;
+		background-repeat: no-repeat;
+		background-size: contain;
+		bottom: 0;
+		content: '';
+		height: 325px;
+		position: absolute;
+		right: 100px;
+		width: 236px;
+		
+		@include respond-below(1625px) {
+			height: 235px;
+		}
+		
+		@include respond-below(lg) {
+			height: 186px;
+			right: 40px;
+		}
+		
+		@include respond-below(660px) {
+			bottom: 56px; // height of copyrights
+			left: 42%;
+			right: unset;
+			transform: translateX(-50%);
+		}
+	}
+
+	.#{$prefix}footer-holder {
+		align-items: flex-start;
+		display: flex;
+		flex: 1;
+		justify-content: space-evenly;
+		margin: 0 auto;
+		max-width: 1200px;
+		padding-bottom: 62px;
+		padding-top: 74px;
+		width: 100%;
+		
+		@include respond-below(670px) {
+			align-items: center;
+			flex-direction: column;
+			padding-bottom: 250px;
+		}
+	}
+
+	.#{$prefix}footer-copyright {
+		align-items: center;
+		background-color: #0b3d5c;
+		color: $text-color-light-medium;
+		display: flex;
+		font-size: $font-size-xs;
+		justify-content: center;
+		padding: 23px 0 21px;
+	}
+
+	.#{$prefix}footer-info {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		font-size: $font-size-xs;
+		line-height: 21px;
+		max-width: 305px;
+		text-align: center;
+		width: 100%;
+		
+		.#{$prefix}footer-logo {
+			background-image: url('#{$imgs-path}footer-logo.png');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			filter: invert(1);
+			height: 77px;
+			margin-bottom: 33px;
+			width: 206px;
+		}
+		
+		p {
+			font-size: $font-size-xs;
+		}
+	}
+
+	.#{$prefix}footer-follow-us {
+
+		h4 {
+			color: $text-color-secondary-light;
+			font-family: $font-family-bold;
+			margin-bottom: 24px;
+			
+			@include respond-below(660px) {
+				text-align: center;
+			}
+		}
+	}
+
+	.#{$prefix}footer-link-list {
+		padding-top: 43px;
+		
+		&:not(.#{$prefix}footer-follow-us) {
+			
+			@include respond-below(660px) {
+				text-align: center;
+				width: 100%;
+			}
+		}
+
+		li {
+			&:not(.title) {
+				padding: 10px 0;
+
+				a {
+					color: $text-color-light-medium;
+				}
+			}
+
+			&.title {
+				margin-bottom: 31px;
+
+				a {
+					color: $text-color-secondary-light;
+					font-family: $font-family-bold;
+				}
+			}
+		}
+	}
+}
